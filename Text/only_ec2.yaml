@@ -1,0 +1,17 @@
+# Author :- Sandeep Kaushik
+
+Description: This template will create EC2 Instance
+Resources:
+  UbuntuInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: demo11
+      ImageId: ami-08e5424edfe926b43
+      InstanceType: t2.micro
+      SecurityGroupIds:
+        - sg-0706452edaa03568f
+      Tags:
+        - Key: Name
+          Value: webserver
+
+    
